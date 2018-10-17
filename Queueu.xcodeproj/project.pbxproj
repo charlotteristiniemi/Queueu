@@ -16,6 +16,12 @@
 		125FDEA3216E4115007D5FFF /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FDEA2216E4115007D5FFF /* JoinVC.swift */; };
 		125FDEA5216E45A3007D5FFF /* QueueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FDEA4216E45A3007D5FFF /* QueueVC.swift */; };
 		12E13FE421773C780084177A /* UIColor+CustomColorCatagory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E13FE321773C780084177A /* UIColor+CustomColorCatagory.swift */; };
+		12E13FEC217755F10084177A /* TopPlayerTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E13FEA217755F10084177A /* TopPlayerTVC.swift */; };
+		12E13FED217755F10084177A /* TopPlayerTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E13FEB217755F10084177A /* TopPlayerTVC.xib */; };
+		12E13FF021776F380084177A /* SongTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E13FEE21776F380084177A /* SongTVC.swift */; };
+		12E13FF121776F380084177A /* SongTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E13FEF21776F380084177A /* SongTVC.xib */; };
+		12E13FF4217776970084177A /* NextSongTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E13FF2217776970084177A /* NextSongTVC.swift */; };
+		12E13FF5217776970084177A /* NextSongTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E13FF3217776970084177A /* NextSongTVC.xib */; };
 		69E6B5B5636799B9DD16C01F /* Pods_QueueuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191F0AA73EC4A0DAAF82CEA /* Pods_QueueuTests.framework */; };
 		E8B77909DB9ABCBBC98CE63C /* Pods_Queueu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D5586BD9152B5DC4613547 /* Pods_Queueu.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +50,12 @@
 		125FDEA2216E4115007D5FFF /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
 		125FDEA4216E45A3007D5FFF /* QueueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueVC.swift; sourceTree = "<group>"; };
 		12E13FE321773C780084177A /* UIColor+CustomColorCatagory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColorCatagory.swift"; sourceTree = "<group>"; };
+		12E13FEA217755F10084177A /* TopPlayerTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPlayerTVC.swift; sourceTree = "<group>"; };
+		12E13FEB217755F10084177A /* TopPlayerTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopPlayerTVC.xib; sourceTree = "<group>"; };
+		12E13FEE21776F380084177A /* SongTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTVC.swift; sourceTree = "<group>"; };
+		12E13FEF21776F380084177A /* SongTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongTVC.xib; sourceTree = "<group>"; };
+		12E13FF2217776970084177A /* NextSongTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextSongTVC.swift; sourceTree = "<group>"; };
+		12E13FF3217776970084177A /* NextSongTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextSongTVC.xib; sourceTree = "<group>"; };
 		7F33A709FC1DAFC3DF57AFE9 /* Pods-Queueu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queueu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Queueu/Pods-Queueu.debug.xcconfig"; sourceTree = "<group>"; };
 		8191F0AA73EC4A0DAAF82CEA /* Pods_QueueuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QueueuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED8EFB877A308F5BD54FE90 /* Pods-QueueuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QueueuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QueueuTests/Pods-QueueuTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +107,7 @@
 		125FDE80216E1DD9007D5FFF /* Queueu */ = {
 			isa = PBXGroup;
 			children = (
+				12E13FE5217751EA0084177A /* TableViewCells */,
 				125FDEA1216E40DC007D5FFF /* ViewControllers */,
 				125FDE81216E1DD9007D5FFF /* AppDelegate.swift */,
 				125FDE83216E1DD9007D5FFF /* ViewController.swift */,
@@ -131,6 +144,19 @@
 				12E13FE321773C780084177A /* UIColor+CustomColorCatagory.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		12E13FE5217751EA0084177A /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				12E13FEA217755F10084177A /* TopPlayerTVC.swift */,
+				12E13FEB217755F10084177A /* TopPlayerTVC.xib */,
+				12E13FEE21776F380084177A /* SongTVC.swift */,
+				12E13FEF21776F380084177A /* SongTVC.xib */,
+				12E13FF2217776970084177A /* NextSongTVC.swift */,
+				12E13FF3217776970084177A /* NextSongTVC.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		60973919168CAAEEA0A4A9CB /* Frameworks */ = {
@@ -238,7 +264,10 @@
 			files = (
 				125FDE8C216E1DDA007D5FFF /* LaunchScreen.storyboard in Resources */,
 				125FDE89216E1DDA007D5FFF /* Assets.xcassets in Resources */,
+				12E13FED217755F10084177A /* TopPlayerTVC.xib in Resources */,
+				12E13FF5217776970084177A /* NextSongTVC.xib in Resources */,
 				125FDE87216E1DD9007D5FFF /* Main.storyboard in Resources */,
+				12E13FF121776F380084177A /* SongTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +328,10 @@
 				125FDE82216E1DD9007D5FFF /* AppDelegate.swift in Sources */,
 				125FDEA5216E45A3007D5FFF /* QueueVC.swift in Sources */,
 				12E13FE421773C780084177A /* UIColor+CustomColorCatagory.swift in Sources */,
+				12E13FEC217755F10084177A /* TopPlayerTVC.swift in Sources */,
+				12E13FF021776F380084177A /* SongTVC.swift in Sources */,
 				125FDEA3216E4115007D5FFF /* JoinVC.swift in Sources */,
+				12E13FF4217776970084177A /* NextSongTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
