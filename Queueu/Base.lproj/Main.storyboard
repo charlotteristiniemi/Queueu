@@ -120,15 +120,15 @@
                                     <constraint firstItem="62i-k9-9ho" firstAttribute="leading" secondItem="jtf-of-7lq" secondAttribute="leading" id="Rlh-4V-DEg"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxb-Wz-HE8">
+                            <button opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxb-Wz-HE8">
                                 <rect key="frame" x="64" y="489" width="247" height="50"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.37647058820000001" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.20000000000000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Nzd-60-sDa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" title="LET'S JOIN">
-                                    <color key="titleColor" white="1" alpha="0.94702482880000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="0.20399900114155251" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -180,6 +180,8 @@
                         <viewLayoutGuide key="safeArea" id="uKZ-lf-GHc"/>
                     </view>
                     <connections>
+                        <outlet property="btnJoin" destination="Gxb-Wz-HE8" id="aHj-un-rpz"/>
+                        <outlet property="textFieldCode" destination="62i-k9-9ho" id="fP1-0E-SmK"/>
                         <outlet property="textFieldName" destination="ago-P1-IEB" id="R2k-5w-qCD"/>
                     </connections>
                 </viewController>

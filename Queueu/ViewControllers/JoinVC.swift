@@ -8,26 +8,49 @@
 
 import UIKit
 
-class JoinVC: UIViewController {
+class JoinVC: UIViewController, UITextFieldDelegate {
 
   // MARK: Properties
   @IBOutlet weak var textFieldName: UITextField!
+  @IBOutlet weak var textFieldCode: UITextField!
+  @IBOutlet weak var btnJoin: UIButton!
   
   override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-
+    super.viewDidLoad()
+    self.hideKeyboardWhenTappedAround()
+    textFieldName.delegate = self
+    textFieldCode.delegate = self
+    btnJoin.backgroundColor = UIColor.Primary.OpacityDark
+    btnJoin.setTitleColor(UIColor.Greys.OpacityLight, for: .normal)
+  }
   
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
+  // MARK: TextField Delegate
+  func textFieldDidEndEditing(_ textField: UITextField) {
     
+    if textFieldCode.text == "" || textFieldName.text == "" {
+      btnJoin.backgroundColor = UIColor.Primary.OpacityDark
+      btnJoin.setTitleColor(UIColor.Greys.OpacityLight, for: .normal)
+      btnJoin.isUserInteractionEnabled = false
+    } else {
+      btnJoin.backgroundColor = UIColor.Accent.Regular
+      btnJoin.setTitleColor(UIColor.Greys.Light, for: .normal)
+      btnJoin.isUserInteractionEnabled = true
+    }
+  }
+  
+  // MARK: - Navigation
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {}
+}
 
+/* Resign Keyboard */
+extension UIViewController {
+  func hideKeyboardWhenTappedAround() {
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+    tap.cancelsTouchesInView = false
+    view.addGestureRecognizer(tap)
+  }
+  
+  @objc func dismissKeyboard() {
+    view.endEditing(true)
+  }
 }

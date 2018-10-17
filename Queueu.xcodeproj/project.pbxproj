@@ -15,6 +15,7 @@
 		125FDE97216E1DDA007D5FFF /* QueueuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FDE96216E1DDA007D5FFF /* QueueuTests.swift */; };
 		125FDEA3216E4115007D5FFF /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FDEA2216E4115007D5FFF /* JoinVC.swift */; };
 		125FDEA5216E45A3007D5FFF /* QueueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FDEA4216E45A3007D5FFF /* QueueVC.swift */; };
+		12E13FE421773C780084177A /* UIColor+CustomColorCatagory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E13FE321773C780084177A /* UIColor+CustomColorCatagory.swift */; };
 		69E6B5B5636799B9DD16C01F /* Pods_QueueuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191F0AA73EC4A0DAAF82CEA /* Pods_QueueuTests.framework */; };
 		E8B77909DB9ABCBBC98CE63C /* Pods_Queueu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D5586BD9152B5DC4613547 /* Pods_Queueu.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		125FDE98216E1DDA007D5FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		125FDEA2216E4115007D5FFF /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
 		125FDEA4216E45A3007D5FFF /* QueueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueVC.swift; sourceTree = "<group>"; };
+		12E13FE321773C780084177A /* UIColor+CustomColorCatagory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColorCatagory.swift"; sourceTree = "<group>"; };
 		7F33A709FC1DAFC3DF57AFE9 /* Pods-Queueu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queueu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Queueu/Pods-Queueu.debug.xcconfig"; sourceTree = "<group>"; };
 		8191F0AA73EC4A0DAAF82CEA /* Pods_QueueuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QueueuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED8EFB877A308F5BD54FE90 /* Pods-QueueuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QueueuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QueueuTests/Pods-QueueuTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				125FDE83216E1DD9007D5FFF /* ViewController.swift */,
 				125FDE85216E1DD9007D5FFF /* Main.storyboard */,
 				125FDE88216E1DDA007D5FFF /* Assets.xcassets */,
+				12E13FDE21773B510084177A /* Config */,
 				125FDE8A216E1DDA007D5FFF /* LaunchScreen.storyboard */,
 				125FDE8D216E1DDA007D5FFF /* Info.plist */,
 			);
@@ -120,6 +123,14 @@
 				125FDEA4216E45A3007D5FFF /* QueueVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		12E13FDE21773B510084177A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				12E13FE321773C780084177A /* UIColor+CustomColorCatagory.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		60973919168CAAEEA0A4A9CB /* Frameworks */ = {
@@ -287,6 +298,7 @@
 				125FDE84216E1DD9007D5FFF /* ViewController.swift in Sources */,
 				125FDE82216E1DD9007D5FFF /* AppDelegate.swift in Sources */,
 				125FDEA5216E45A3007D5FFF /* QueueVC.swift in Sources */,
+				12E13FE421773C780084177A /* UIColor+CustomColorCatagory.swift in Sources */,
 				125FDEA3216E4115007D5FFF /* JoinVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
