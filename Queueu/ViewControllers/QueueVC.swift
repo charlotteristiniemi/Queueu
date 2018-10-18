@@ -15,13 +15,16 @@ struct staticVariable {
   static let NextSongTVCIdentifier = "NextSongTVCIdentifier"
 }
 
-class QueueVC: UIViewController, UITableViewDataSource, UITextFieldDelegate {
+class QueueVC: UIViewController, UITableViewDataSource, UITextFieldDelegate, CloseVCDelegate {
 
   @IBOutlet weak var navBar: UINavigationBar!
   @IBOutlet weak var tableView: UITableView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+    self.navigationController?.navigationBar.shadowImage = UIImage()
     
     let playerNib = UINib(nibName: "TopPlayerTVC", bundle: nil)
     tableView.register(playerNib, forCellReuseIdentifier: staticVariable.TopPlayerTVCIdentifier)
@@ -90,14 +93,19 @@ class QueueVC: UIViewController, UITableViewDataSource, UITextFieldDelegate {
     }
   }
   
-  /*
+  func dismissClose() {
+    print("då")
+    self.dismiss(animated: true, completion: nil)
+  }
+  
   // MARK: - Navigation
-
+  
   // In a storyboard-based application, you will often want to do a little preparation before navigation
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    // Get the new view controller using segue.destination.
-    // Pass the selected object to the new view controller.
+    if let nav = segue.destination as? UINavigationController, let closeVC = nav.topViewController as? CloseVC {
+      
+      closeVC.delegate = self
+    }
   }
-  */
 
 }

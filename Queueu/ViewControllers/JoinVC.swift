@@ -17,6 +17,10 @@ class JoinVC: UIViewController, UITextFieldDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+    self.navigationController?.navigationBar.shadowImage = UIImage()
+    
     self.hideKeyboardWhenTappedAround()
     textFieldName.delegate = self
     textFieldCode.delegate = self
@@ -39,6 +43,7 @@ class JoinVC: UIViewController, UITextFieldDelegate {
   }
   
   // MARK: - Navigation
+  
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {}
 }
 

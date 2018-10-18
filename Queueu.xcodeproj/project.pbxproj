@@ -15,6 +15,7 @@
 		125FDE97216E1DDA007D5FFF /* QueueuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FDE96216E1DDA007D5FFF /* QueueuTests.swift */; };
 		125FDEA3216E4115007D5FFF /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FDEA2216E4115007D5FFF /* JoinVC.swift */; };
 		125FDEA5216E45A3007D5FFF /* QueueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125FDEA4216E45A3007D5FFF /* QueueVC.swift */; };
+		12AF577C217890BF001256DB /* CloseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AF577B217890BF001256DB /* CloseVC.swift */; };
 		12E13FE421773C780084177A /* UIColor+CustomColorCatagory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E13FE321773C780084177A /* UIColor+CustomColorCatagory.swift */; };
 		12E13FEC217755F10084177A /* TopPlayerTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E13FEA217755F10084177A /* TopPlayerTVC.swift */; };
 		12E13FED217755F10084177A /* TopPlayerTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E13FEB217755F10084177A /* TopPlayerTVC.xib */; };
@@ -49,6 +50,7 @@
 		125FDE98216E1DDA007D5FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		125FDEA2216E4115007D5FFF /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
 		125FDEA4216E45A3007D5FFF /* QueueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueVC.swift; sourceTree = "<group>"; };
+		12AF577B217890BF001256DB /* CloseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseVC.swift; sourceTree = "<group>"; };
 		12E13FE321773C780084177A /* UIColor+CustomColorCatagory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColorCatagory.swift"; sourceTree = "<group>"; };
 		12E13FEA217755F10084177A /* TopPlayerTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPlayerTVC.swift; sourceTree = "<group>"; };
 		12E13FEB217755F10084177A /* TopPlayerTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopPlayerTVC.xib; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				125FDEA2216E4115007D5FFF /* JoinVC.swift */,
 				125FDEA4216E45A3007D5FFF /* QueueVC.swift */,
+				12AF577B217890BF001256DB /* CloseVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				125FDE84216E1DD9007D5FFF /* ViewController.swift in Sources */,
 				125FDE82216E1DD9007D5FFF /* AppDelegate.swift in Sources */,
 				125FDEA5216E45A3007D5FFF /* QueueVC.swift in Sources */,
+				12AF577C217890BF001256DB /* CloseVC.swift in Sources */,
 				12E13FE421773C780084177A /* UIColor+CustomColorCatagory.swift in Sources */,
 				12E13FEC217755F10084177A /* TopPlayerTVC.swift in Sources */,
 				12E13FF021776F380084177A /* SongTVC.swift in Sources */,
